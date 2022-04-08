@@ -1,28 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main prints combination of 3 digits.
+ * Return 0
  */
- int main(void)
+int main(void)
 {
-		int n, m, l;
+	int c;
+	int d;
+	int e = 0;
 
-			for (n = 48; n < 58; n++)
+	while (e < 10)
+	{
+		d = 0;
+		while (d < 10)
+		{
+			c = 0;
+			while (c < 10)
+			{
+				if (c != d && d != e && e < d && d < c)
+				{
+					putchar('0' + e);
+					putchar('0' + d);
+					putchar('0' + c);
+					if (c + d + e != 9 + 8 + 7)
 					{
-								for (m = 49; m < 58; m++)
-											{
-															for (l = 50; l < 58; l++)
-																			{
-																								if (l > m && m > n)
-																													{
-																																			putchar(n);
-																																								putchar(m);
-																																													putchar(l);
-																																																		if (n != 55 || m != 56)
-																																																								{
-																																																															putchar(',');
-																																																																					putchar(' ');
-																																																																										}
-																																																						}
-																											}
-																	}
-									}
-				putchar('\n');
-					return (0);
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				c++;
+			}
+			d++;
+		}
+		e++;
+	}
+	putchar('\n');
+	return (0);
 }
