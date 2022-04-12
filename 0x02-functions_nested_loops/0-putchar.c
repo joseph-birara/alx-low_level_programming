@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main: main block
+ * main-main block
  * Description: prints _puchar
  * Return: 0
  */
