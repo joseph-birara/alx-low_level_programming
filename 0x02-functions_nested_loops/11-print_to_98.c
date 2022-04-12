@@ -11,6 +11,7 @@ void print_to_98(int n)
 		_putchar(k);
 		_putchar(',');
 		_putchar(' ');
+		_putchar(k);
 	}
 }
 	

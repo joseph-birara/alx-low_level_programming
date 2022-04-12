@@ -1,12 +1,13 @@
 #include "main.h"
 /**
  * print_times_table-prints tabele
+ * @n: prameter n
  */
 void print_times_table(int n)
 {
 	if (n <= 15 && n >= 0)
 	{
-		int in, ot,c;
+		int in, ot, c;
 
 		for (ot = 0; ot <= n; ot++)
 		{
@@ -17,7 +18,7 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar('c');
+				_putchar(48 + c);
 				c = c + ot;
 
 			}
