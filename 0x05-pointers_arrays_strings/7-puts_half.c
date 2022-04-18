@@ -1,19 +1,24 @@
 #include "main.h"
+
 /**
- * puts_half - prints half of the string
- * @str: a character pointer
- * Return: nothing
- */
+* puts_half - nos muestre caracteres que sean numeros enteros haciendo % 2
+* @str: Input string
+**/
 void puts_half(char *str)
 {
-	int i, start;
+int i, n, len;
 
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	start = (i + 1) / 2;
-	for (i = start; str[i]; i++)
-		_putchar(str[i]);
-	_putchar('\n');
+len = 0;
+
+for (i = 0; str[i] != '\0'; i++)
+len++;
+
+n = (len / 2);
+
+if ((len % 2) == 1)
+n = ((len + 1) / 2);
+
+for (i = n; str[i] != '\0'; i++)
+_putchar(str[i]);
+_putchar('\n');
 }
