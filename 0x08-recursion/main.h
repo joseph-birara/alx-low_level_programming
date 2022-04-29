@@ -9,12 +9,11 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 int square(int n, int val);
 int _sqrt_recursion(int n);
-<<<<<<< HEAD
 int square(int n, int val);
 int halp(int c, int i);
-=======
+
 int check_prime(int n, int resp);
->>>>>>> 16220b640b45b1c86df51c2c9e7ed01a12d6614a
+
 int is_prime_number(int n);
 int last_index(char *s);
 int check(char *s, int start, int end, int pair);
