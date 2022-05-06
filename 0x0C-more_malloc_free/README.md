@@ -1,2 +1,3 @@
-###malloc y free!
-Varias funciones utilizando malloc y tambien free
+
+#0x0C. C - More malloc, free
+
