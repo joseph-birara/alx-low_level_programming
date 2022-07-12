@@ -38,7 +38,7 @@ void _puts(char *s)
 
 char *_strcpy(char *dest, char *src)
 {
-return ('1');
+return (char*)1;
 }
 /**
  * _atoi - prints char

@@ -9,7 +9,7 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-return ('1');
+return (char*)1;
 }
 /**
  * *_strchr - prints char
@@ -20,7 +20,7 @@ return ('1');
 
 char *_strchr(char *s, char c)
 {
-return ('1');
+return (char*)1;
 }
 /**
  * _strspn - prints char
@@ -42,7 +42,7 @@ return (1);
 
 char *_strpbrk(char *s, char *accept)
 {
-return ('1');
+return (char*)1;
 }
 /**
  * *_strstr - prints char
@@ -53,5 +53,5 @@ return ('1');
 
 char *_strstr(char *haystack, char *needle)
 {
-return ('1');
+return (char*)1;
 }
