@@ -79,4 +79,7 @@ shash_node_t **array;
 shash_node_t *shead;
 shash_node_t *stail;
 } shash_table_t;
+hash_table_t *hash_table_create(unsigned long int size);
+void array_null_init(hash_table_t *table);
+void shash_table_delete(shash_table_t *ht)
 #endif
